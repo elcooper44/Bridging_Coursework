@@ -1,0 +1,42 @@
+{% load static %}
+<html>
+    <head>
+       <title> My Blog Site</title>
+       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        {% if user.is_authenticated %}
+         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <body>
+            <div class="page-header">
+                <h1><a href="/">My Blog Site</a></h1>
+            </div>
+            <div class="content container">
+                <div class="about-me">
+                    <div class="pic">
+                        <img src= “20190721_125026.jpg"  style="width:128px;height:128px;">
+                    </div>
+                    <div class="List">
+                        <h2>"About me:"</h2>
+                        <ul>
+                            <li>First Year at Uni</li>
+                            <li>Love baking!</li>
+                            <li>Am on the cricket team</li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+    </body>
+</html>
