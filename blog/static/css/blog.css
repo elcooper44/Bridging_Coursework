@@ -1,11 +1,11 @@
 .page-header {
-    background-color: rgb(18, 66, 199);
+    background-color: rgb(74, 187, 125);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #61f7f7;
+    color: rgb(255, 255, 255);
     font-size: 36pt;
     text-decoration: none;
 }
@@ -15,6 +15,10 @@
 }
 
 h1, h2, h3, h4 {
+    font-family: 'Source Code Pro', monospace;
+}
+.about-me h2{
+    color: rgb(74, 187, 125);
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -42,7 +46,7 @@ h1, h2, h3, h4 {
 }
 
 .post h2 a, .post h2 a:visited {
-    color: #000000;
+    color: rgb(74, 187, 125);;
 }
 .picture{
     padding-top: 100px;
@@ -53,5 +57,17 @@ h1, h2, h3, h4 {
 }
 .about-me{
     float: right;
+}
     
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.pic{
+    padding-top: 50px;
+    padding-left:50px;
+    padding-bottom: 75px;
 }
