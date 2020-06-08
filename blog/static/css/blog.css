@@ -18,8 +18,8 @@ h1, h2, h3, h4 {
     font-family: 'Source Code Pro', monospace;
 }
 .about-me h2{
-    color: rgb(74, 187, 125);
-    font-family: 'Source Code Pro', monospace;
+    color: rgb(75, 117, 255);
+    font-family: 'Oswald', sans-serif;
 }
 
 .date {
@@ -46,7 +46,8 @@ h1, h2, h3, h4 {
 }
 
 .post h2, .post h2 a, .post h2 a:visited {
-    color: rgb(74, 187, 125);;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(75, 117, 255);;
 }
 .picture{
     padding-top: 100px;
