@@ -59,7 +59,9 @@ h1, h2, h3, h4 {
 .about-me{
     float: right;
 }
-    
+p{
+    text-align: justify;
+}
 .rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
